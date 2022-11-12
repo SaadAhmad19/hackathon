@@ -11,37 +11,37 @@
     <div class="container">
         <div class="content">
                 <h1 class="form-title">Register Here</h1>
-                <form class="my-form">
+                <form  class="my-form">
                     <div class="beside">
-                    <select>
+                    <select id="cTime">
                         <option disabled selected >Class Timing</option>
                         <option>9am to 11am</option>
                         <option>11am to 1pm</option>
                     </select>
                 </div>
                 <div class="beside">
-                    <select>
+                    <select id="cSchd">
                         <option disabled selected> Schedule of classes</option>
                         <option>MFW</option>
                         <option>TTS</option>
                         <option>Sunday</option>
                     </select>
                 </div><div class="beside">
-                    <select>
+                    <select id="cTeach">
                         <option disabled selected>Teacher Name</option>
                         <option>Ghous Ahmed</option>
                         <option>Haider Ali</option>
                         <option>Inzimam Malik</option>
                     </select>
                 </div><div class="beside">
-                    <select>
+                    <select id="Sec">
                         <option  selected disabled>Section</option>
                         <option>A</option>
                         <option>B</option>
                         <option>C</option>
                     </select>
                 </div><div class="beside">
-                    <select>
+                    <select  id="coures">
                         <option selected disabled>Course</option>
                         <option>Wab And Mobile</option>
                         <option>Graphic Designing</option>
@@ -49,7 +49,7 @@
 
                     </select>
                 </div><div class="beside">
-                    <select>
+                    <select  id="Btch">
                         <option disabled selected >Batch Num</option>
                         <option>8</option>
                         <option>9</option>
@@ -57,10 +57,10 @@
 
                     </select>
                 </div>
-                    <button type="button">Submit</button>
+                    <button onclick="fSubmit()" type="button">Submit</button>
                 </form>
             </div>
      </div>
-    
+    <script type="module" src="crtcls.js"></script>
 </body>
 </html>

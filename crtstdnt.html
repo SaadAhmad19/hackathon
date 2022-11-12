@@ -15,32 +15,45 @@
             <h1 class="form-title">Register Here</h1>
             <form class="my-form">
                 <div class="beside">
-                    <input type="text" placeholder="NAME">
+                    <input id="sName" type="text" placeholder="NAME">
                 </div>
 
                 <div class="beside">
-                    <input type="text" placeholder="NAME">
+                    <input id="fName" type="text" placeholder="FATHER NAME">
                 </div>
                 <div class="beside">
 
-                        <input type="text" placeholder="NAME">
+                        <input id="rNum" type="number" placeholder="ROLL NUMBER">
                 </div>
                 <div class="beside">
 
-                        <input type="text" placeholder="NAME">
+                        <input id="cNum" type="number" placeholder="CONTACT NUMBER">
                 </div>
                 <div class="beside">
 
-                    <input type="text" placeholder="NAME">
+                    <input id="idNum" type="number" placeholder="CNIC NUMBER">
                 </div>
                 <div class="beside">
+                    <input id="pPic" type="file" accept="images/*" placeholder="PICTURE">
 
                 </div>
-                <button type="button">Submit</button>
+                <div class="beside">
+                    <input id="courseName" type="text" placeholder="COURSE NAME">
+
+                </div>
+                <div class="beside">
+                    <select id="cSection">
+                        <option  selected disabled>Section</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                    </select>
+                </div>
+                <button onclick="fSubmit()" type="button">Submit</button>
             </form>
         </div>
     </div>
-
+<script type="module" src="crtstnd.js"></script>
 </body>
 
 </html>

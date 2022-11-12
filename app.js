@@ -2,12 +2,12 @@
  import { getAuth, signInWithEmailAndPassword,onAuthStateChanged  } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
   const firebaseConfig = {
-    apiKey: "AIzaSyCJGMLgHYVGWwDMSRGnRIbuRmJYeGuE0Y8",
-    authDomain: "hackathon-f7d2a.firebaseapp.com",
-    projectId: "hackathon-f7d2a",
-    storageBucket: "hackathon-f7d2a.appspot.com",
-    messagingSenderId: "36620486234",
-    appId: "1:36620486234:web:8e655a655621de10a77a63"
+    apiKey: "AIzaSyAaHMLxX_PlH1g9K-FlxXpsu4UgCxhBwEU",
+    authDomain: "admin-app-34c7c.firebaseapp.com",
+    projectId: "admin-app-34c7c",
+    storageBucket: "admin-app-34c7c.appspot.com",
+    messagingSenderId: "560315606932",
+    appId: "1:560315606932:web:1535d49f8cf217f7499181"
   };
   const app = initializeApp(firebaseConfig);
   const auth = getAuth();

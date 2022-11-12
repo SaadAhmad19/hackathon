@@ -13,34 +13,23 @@ import { getFirestore,collection,addDoc} from "https://www.gstatic.com/firebasej
  const db = getFirestore();
  
 
+ const course =document.getElementById("coures")[document.getElementById("coures").selectedIndex].innerHTML
+ const sect =document.getElementById("Sec")[document.getElementById("Sec").selectedIndex].innerHTML
+ const teach =document.getElementById("cTeach")[document.getElementById("cTeach").selectedIndex].innerHTML
+ const cschd =document.getElementById("cSchd")[document.getElementById("cSchd").selectedIndex].innerHTML
  const ctime =document.getElementById("cTime")[document.getElementById("cTime").selectedIndex].innerHTML
-const cschd =document.getElementById("cSchd")[document.getElementById("cSchd").selectedIndex].innerHTML
-const teach =document.getElementById("cTeach")[document.getElementById("cTeach").selectedIndex].innerHTML
-const sect =document.getElementById("Sec")[document.getElementById("Sec").selectedIndex].innerHTML
-const course =document.getElementById("coures")[document.getElementById("coures").selectedIndex].innerHTML
-const btch =document.getElementById("Btch")[document.getElementById("Btch").selectedIndex].innerHTML
-
-
-// console.log(ctime);
-// Add a new document with a generated id.
 
 
 const fSubmit = async () =>{
     event.preventDefault()
-
-try {const docRef = await addDoc(collection(db, "class"), {
-classTimings : ctime, 
-schedulOfClasses: cschd,
-teacherName: teach,
-sectionName: sect,
-courseName: course,
-batchName: btch,
+    
+  const docRef = await addDoc(collection(db, "class"), {
+        classTimings : ctime, 
+        schedulOfClasses: cschd,
+        teacherName: teach,
+        sectionName: sect,
+        courseName: course,
 });
-
-}
-catch(error){
-console.log(error);
-}
 }
 
 window.fSubmit=fSubmit

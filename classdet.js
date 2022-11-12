@@ -21,12 +21,11 @@ querySnapshot.forEach((doc) => {
     console.log(doc.id, " => ", doc.data());
     tablebd.innerHTML += `
   <tr class="tr">
-  <td  class="td">${doc.data().batchname}</td>
   <td class="td">${doc.data().classTimings}</td>
+  <td class="td" >${doc.data().schedulOfClasses}</td>
+  <td class="td" >${doc.data().teacherName}</td>
+  <td class="td" >${doc.data().sectionName}</td>
   <td class="td">${doc.data().courseName}</td>
-    <td class="td" >${doc.data().schedulOfClasses}</td>
-    <td class="td" >${doc.data().sectionName}</td>
-    <td class="td" >${doc.data().teacherName}</td>
     </tr>
     `
 });

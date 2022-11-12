@@ -29,3 +29,4 @@ const logOut = () => {
   })
 }
 window.logOut = logOut;
+
